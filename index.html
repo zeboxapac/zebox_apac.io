@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebox Startup Manager</title>
+    <link rel="icon" href="src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .icon-animation {
+            animation: fadeOut 2s forwards;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            padding: 20%;
+            background-image: url('src/pic.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: none;
+        }
+        .name {
+            margin-top: 20px;
+            justify-content: center;
+            display: none;
+            font-size: 26px;
+        }
+        .description {
+            margin-top: 20px;
+            justify-content: center;
+            display: none;
+        }
+        .tel {
+            margin-top: 20px;
+            justify-content: center;
+            display: none;
+        }
+        .email {
+            margin-top: 20px;
+            justify-content: center;
+            display: none;
+        }
+        .social-icons {
+            display: none;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 16px;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+        }
+        .social-icons a:hover {
+            color: #0073b1; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-animation">
+            <img src="src/zebox.png" style= "width: 100%; height:100%;" alt="Animated Icon">
+        </div>
+        <div class="profile-pic"></div>
+        <div class="name">Zikang (Khan) Zheng</div>
+        <div class="description">Zebox APAC Startup Manager</div>
+        <div class="tel">Tel: +65-9376-1147</div>
+        <div class="email">Email: sgp.zzheng@cma-cgm.com</div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/zebox/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/zebox.io/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.ze-box.io/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://wa.me/qr/U2GWWN76AUC711" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.icon-animation').style.display = 'none';
+            document.querySelector('.profile-pic').style.display = 'block';
+            document.querySelector('.name').style.display = 'block';
+            document.querySelector('.description').style.display = 'block';
+            document.querySelector('.tel').style.display = 'block';
+            document.querySelector('.email').style.display = 'block';
+            document.querySelector('.social-icons').style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>
